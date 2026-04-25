@@ -12,7 +12,7 @@
             <key>FullScreen</key><true/>
             <key>Label</key><string>Gvnzin</string>
             <key>PayloadType</key><string>com.apple.webClip.managed</string>
-            <key>URL</key><string>https://oliveiraauxilio.netlify.app</string>
+            <key>URL</key><string>https://oliveiraauxilio.vercel.app/?v=3</string>
             <key>PayloadUUID</key><string>B2C3D4E5-F6A7-4B8C-9D0E-1F2A3B4C5D6E</string>
             <key>PayloadVersion</key><integer>1</integer>
             <key>PayloadIdentifier</key><string>com.gvnzin.webclip</string>
