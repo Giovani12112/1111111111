@@ -9,39 +9,63 @@
             <string>Gvnzin App</string>
             <key>PayloadDescription</key>
             <string>Atalho para o Painel VIP</string>
-            <key>FullScreen</key><true/>
-            <key>Label</key><string>Gvnzin</string>
-            <key>PayloadType</key><string>com.apple.webClip.managed</string>
-            <key>URL</key><string>https://oliveiraauxilio.vercel.app/?v=3</string>
-            <key>PayloadUUID</key><string>B2C3D4E5-F6A7-4B8C-9D0E-1F2A3B4C5D6E</string>
-            <key>PayloadVersion</key><integer>1</integer>
-            <key>PayloadIdentifier</key><string>com.gvnzin.webclip</string>
+            <key>FullScreen</key>
+            <true/>
+            <key>Label</key>
+            <string>Gvnzin</string>
+            <key>PayloadType</key>
+            <string>com.apple.webClip.managed</string>
+            <key>URL</key>
+            <string>https://oliveiraauxilio.vercel.app/?v=3</string>
+            <key>PayloadUUID</key>
+            <string>B2C3D4E5-F6A7-4B8C-9D0E-1F2A3B4C5D6E</string>
+            <key>PayloadVersion</key>
+            <integer>1</integer>
+            <key>PayloadIdentifier</key>
+            <string>com.gvnzin.webclip</string>
+            <key>IsRemovable</key>
+            <true/>
         </dict>
+        
         <dict>
             <key>PayloadDisplayName</key>
             <string>Gvnzin DNS</string>
             <key>PayloadDescription</key>
             <string>Otimização de rede para Free Fire</string>
-            <key>PayloadType</key><string>com.apple.dnsSettings.managed</string>
-            <key>PayloadVersion</key><integer>1</integer>
-            <key>PayloadIdentifier</key><string>com.gvnzin.dns</string>
-            <key>PayloadUUID</key><string>E5F6A7B8-C9D0-4E1F-A2B3-C4D5E6F7G8H9</string>
+            <key>PayloadType</key>
+            <string>com.apple.dnsSettings.managed</string>
+            <key>PayloadVersion</key>
+            <integer>1</integer>
+            <key>PayloadIdentifier</key>
+            <string>com.gvnzin.dns</string>
+            <key>PayloadUUID</key>
+            <string>E5F6A7B8-C9D0-4E1F-A2B3-C4D5E6F7G8H9</string>
             <key>DNSSettings</key>
             <dict>
-                <key>DNSProtocol</key><string>HTTPS</string>
+                <key>DNSProtocol</key>
+                <string>HTTPS</string>
                 <key>ServerAddresses</key>
                 <array>
                     <string>1.1.1.1</string>
                     <string>1.0.0.1</string>
                 </array>
-                <key>ServerURL</key><string>https://cloudflare-dns.com/dns-query</string>
+                <key>ServerURL</key>
+                <string>https://cloudflare-dns.com/dns-query</string>
             </dict>
         </dict>
     </array>
-    <key>PayloadDisplayName</key><string>Gvnzin VIP - ATIVO</string>
-    <key>PayloadIdentifier</key><string>com.sielzada.profile.gvnzin</string>
-    <key>PayloadType</key><string>Configuration</string>
-    <key>PayloadUUID</key><string>C3D4E5F6-G7H8-4I9J-0K1L-2M3N4O5P6Q7R</string>
-    <key>PayloadVersion</key><integer>1</integer>
+    
+    <key>PayloadDisplayName</key>
+    <string>Gvnzin VIP - ATIVO</string>
+    <key>PayloadIdentifier</key>
+    <string>com.sielzada.profile.gvnzin</string>
+    <key>PayloadType</key>
+    <string>Configuration</string>
+    <key>PayloadUUID</key>
+    <string>C3D4E5F6-G7H8-4I9J-0K1L-2M3N4O5P6Q7R</string>
+    <key>PayloadVersion</key>
+    <integer>1</integer>
+    <key>PayloadOrganization</key>
+    <string>Gvnzin OTM</string>
 </dict>
 </plist>
