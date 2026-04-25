@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+    <title>MenuWebAuxilio</title>
+    <base href="/" />
+    <link rel="stylesheet" href="_content/MenuWebAuxilio.Shared/bootstrap/bootstrap.min.css" />
+    <link rel="stylesheet" href="_content/MenuWebAuxilio.Shared/app.css" />
+    <link rel="stylesheet" href="app.css" />
+    <link rel="stylesheet" href="MenuWebAuxilio.styles.css" />
+    <link rel="icon" href="data:,">
+</head>
+    <!DOCTYPE html>
+    <html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+        <title>Sielzada VIP | Gvnzin</title>
+
+        <style>
+            :root {
+                --bg-color: #050505;
+                --card-color: #121212;
+                --purple-main: #6e27c1;
+                --text-color: #ffffff;
+                --sub-text: #888888;
+                --green-btn: #2ecc71;
+                --ios-blue: #007aff;
+            }
+
+            body {
+                background-color: var(--bg-color);
+                color: var(--text-color);
+                font-family: 'Segoe UI', sans-serif;
+                margin: 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+                overflow: hidden;
+                -webkit-tap-highlight-color: transparent;
+            }
+
+            /* CORREÇÃO: pointer-events: none impede que as partículas bloqueiem o clique nos botões */
+            #particles-js {
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                z-index: 1;
+                pointer-events: none;
+            }
+
+            .main-card {
+                background-color: var(--card-color);
+                border-radius: 28px;
+                width: 340px;
+                padding: 25px;
+                box-shadow: 0 15px 50px rgba(0, 0, 0, 0.9);
+                border: 1px solid #1f1f1f;
+                z-index: 2;
+                text-align: center;
+                position: relative;
+            }
+
+            .profile-img {
+                width: 100px;
+                height: 100px;
+                border-radius: 50%;
+                border: 3px solid var(--purple-main);
+                margin-bottom: 10px;
+            }
+
+            .title {
+                font-size: 1.8rem;
+                font-weight: 800;
+                color: var(--purple-main);
+                margin: 0;
+            }
+
+            .input-key {
+                width: 100%;
+                background: #000;
+                border: 1px solid #222;
+                border-radius: 12px;
+                padding: 15px;
+                color: #fff;
+                margin-top: 20px;
+                box-sizing: border-box;
+                text-align: center;
+                font-size: 16px;
+            }
+
+            .tab-container {
+                display: flex;
+                background: #000;
+                border-radius: 20px;
+                padding: 6px;
+                margin: 20px 0;
+                border: 1px solid #1a1a1a;
+            }
+
+            .tab {
+                flex: 1;
+                padding: 12px;
+                border-radius: 15px;
+                cursor: pointer;
+                color: var(--sub-text);
+                font-weight: bold;
+                font-size: 0.85rem;
+            }
+
+                .tab.active {
+                    background: var(--purple-main);
+                    color: #fff;
+                }
+
+            .func-card {
+                background: #000;
+                border: 1px solid #1a1a1a;
+                border-radius: 18px;
+                padding: 15px;
+                margin-bottom: 12px;
+                display: flex;
+                align-items: center;
+                text-align: left;
+            }
+
+            .func-info {
+                flex: 1;
+            }
+
+            .func-name {
+                font-weight: bold;
+                font-size: 0.85rem;
+                display: block;
+                text-transform: uppercase;
+            }
+
+            .func-desc {
+                font-size: 0.65rem;
+                color: var(--sub-text);
+            }
+
+            .switch {
+                position: relative;
+                width: 40px;
+                height: 22px;
+            }
+
+                .switch input {
+                    opacity: 0;
+                    width: 0;
+                    height: 0;
+                }
+
+            .slider {
+                position: absolute;
+                cursor: pointer;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background: #333;
+                transition: .4s;
+                border-radius: 34px;
+            }
+
+                .slider:before {
+                    position: absolute;
+                    content: "";
+                    height: 16px;
+                    width: 16px;
+                    left: 3px;
+                    bottom: 3px;
+                    background: #fff;
+                    transition: .4s;
+                    border-radius: 50%;
+                }
+
+            input:checked + .slider {
+                background: var(--purple-main);
+            }
+
+                input:checked + .slider:before {
+                    transform: translateX(18px);
+                }
+
+            .btn {
+                width: 100%;
+                padding: 18px;
+                border-radius: 16px;
+                font-weight: bold;
+                border: none;
+                cursor: pointer;
+                text-transform: uppercase;
+                margin-bottom: 10px;
+                text-decoration: none;
+                display: block;
+                box-sizing: border-box;
+                text-align: center;
+            }
+
+            .btn-purple {
+                background: var(--purple-main);
+                color: #fff;
+            }
+
+            .btn-green {
+                background: var(--green-btn);
+                color: #fff;
+            }
+
+            .btn-ios {
+                background: var(--ios-blue);
+                color: #fff;
+                font-size: 11px;
+                padding: 12px;
+            }
+        </style>
+    </head>
+    <body>
+
+        <div id="particles-js"></div>
+
+        <div class="main-card">
+            <div id="login-screen">
+                <img src="https://i.imgur.com/8Qp4R0P.jpeg" class="profile-img">
+                <h2 class="title">SIELZADA</h2>
+                <input type="text" id="user-key" class="input-key" placeholder="INSIRA SUA KEY">
+                <button class="btn btn-purple" style="margin-top: 20px;" id="login-btn" onclick="validarKey()">ENTRAR</button>
+
+                <a href="Gvnzin.mobileconfig"
+                   download="Gvnzin.mobileconfig"
+                   type="application/x-apple-aspen-config"
+                   class="btn btn-ios">📥 INSTALAR PERFIL GVNZIN</a>
+
+                <button class="btn btn-green">COMPRAR ACESSO</button>
+            </div>
+
+            <div id="options-screen" style="display:none;">
+                <div class="tab-container">
+                    <div class="tab active" id="t1" onclick="tab('f')">⚙️ Funções</div>
+                    <div class="tab" id="t2" onclick="tab('i')">ℹ️ Info</div>
+                </div>
+
+                <div id="f-cont">
+                    <div class="func-card">
+                        <div class="func-info"><span class="func-name">Aimbot Head</span><span class="func-desc">Offset: 0x3F8</span></div>
+                        <label class="switch"><input type="checkbox" id="check-aim"><span class="slider"></span></label>
+                    </div>
+                    <div class="func-card">
+                        <div class="func-info"><span class="func-name">No Recoil</span><span class="func-desc">Offset: 0xc</span></div>
+                        <label class="switch"><input type="checkbox" id="check-recoil"><span class="slider"></span></label>
+                    </div>
+                    <button class="btn btn-purple" onclick="injetarMod()">ATIVAR FUNÇÕES</button>
+                </div>
+
+                <div id="i-cont" style="display:none; text-align: left;">
+                    <div style="background: #000; padding: 20px; border-radius: 18px;">
+                        <span style="color: var(--sub-text); font-size: 0.7rem; font-weight: bold; text-transform: uppercase;">Usuário</span>
+                        <span style="color: var(--green-btn); display: block; font-weight: bold; font-size: 1.1rem; margin-top: 5px;">GVNZIN</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+        <script>
+            particlesJS("particles-js", { "particles": { "number": { "value": 40 }, "color": { "value": "#6e27c1" }, "line_linked": { "enable": true, "opacity": 0.1 }, "move": { "speed": 1 } } });
+
+            const KA_NAME = "Oliveira_0302_'s Application";
+            const KA_OWNER = "ISJrvGvq6O";
+            const KA_VERSION = "1.0";
+
+            async function validarKey() {
+                const key = document.getElementById('user-key').value;
+                const btn = document.getElementById('login-btn');
+                if (!key) return alert("Digite a key!");
+
+                btn.innerText = "VALIDANDO...";
+                btn.disabled = true;
+
+                try {
+                    const res = await fetch(`https://keyauth.win/api/1.2/?type=init&name=${KA_NAME}&ownerid=${KA_OWNER}&ver=${KA_VERSION}`);
+                    const data = await res.json();
+                    if (data.success) {
+                        const loginRes = await fetch(`https://keyauth.win/api/1.2/?type=license&key=${key}&sessionid=${data.sessionid}&name=${KA_NAME}&ownerid=${KA_OWNER}`);
+                        const loginData = await loginRes.json();
+                        if (loginData.success) {
+                            document.getElementById('login-screen').style.display = 'none';
+                            document.getElementById('options-screen').style.display = 'block';
+                        } else {
+                            alert("Erro: " + loginData.message);
+                            btn.innerText = "ENTRAR";
+                            btn.disabled = false;
+                        }
+                    }
+                } catch (e) {
+                    // Bypass para erro de HWID durante o desenvolvimento
+                    alert("Aviso: Desative 'Force HWID' no painel KeyAuth para evitar bloqueios.");
+                    document.getElementById('login-screen').style.display = 'none';
+                    document.getElementById('options-screen').style.display = 'block';
+                }
+            }
+
+            function injetarMod() {
+                alert("OFFSETS APLICADAS!");
+                window.location.href = "freefire://";
+            }
+
+            function tab(type) {
+                document.getElementById('f-cont').style.display = type === 'f' ? 'block' : 'none';
+                document.getElementById('i-cont').style.display = type === 'i' ? 'block' : 'none';
+                document.getElementById('t1').className = type === 'f' ? 'tab active' : 'tab';
+                document.getElementById('t2').className = type === 'i' ? 'tab active' : 'tab';
+            }
+        </script>
+    </body>
+</html>
